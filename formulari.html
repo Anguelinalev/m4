@@ -5,30 +5,55 @@
     <title>Formulari</title>
 </head>
 <body>
-<h1> Formulari</h1>
+    <h1> Formulari</h1>
 
-<form>
+    <form>
 
-    <div>
-        <label for="InputNom">Nom</label>
-        <input id="InputNom" type="text">
+        <div>
+            <label for="InputNom">Nom</label>
+            <input id="InputNom" type="text">
 
-    </div>
+        </div>
+        <br>
+        <div>
+            <label for="InputEmail" >Correu electrònic </label>
+            <input id="InputEmail" type="email">
+        </div>
+        <br>
+        <div>
+            <label for="InputTelèfon"> Número de telèfon </label>
+            <input id="InputTelèfon" type="tel" minlength="9" maxlength="9">
 
-    <div>
-        <label>Correu electrònic: </label>
+        </div>
+        <br>
+        <div>
+            <label for="InputTipusDoc" >Tipus de document</label>
+            <select id="InputTipusDoc">
+                <option value="DNI"> DNI </option>
+                <option value="NIE"> NIE </option>
+                <option value="NIF"> NIF </option>
+            </select>
+            <br>
+            <br>
+            <label for="InputNumeroID"> Número de document</label>
+            <input id="InputNumeroID" type="text" minlength="10" maxlength="10">
+        </div>
+        <br>
+        <div>
+            <p> Què t'agrada fer d'aquestes opcions?</p>
 
-    </div>
+            <input id="InputAfició1"  type="checkbox" value="Fer esport">
+            <label for="InputAfició1"> Fer esport </label>
+
+            <input id="InputAfició2" type="checkbox" value="Llegir">
+            <label for="InputAfició2"> Llegir </label>
+
+            <input id="InputAfició3" type="checkbox" value="Jugar a videojocs">
 
 
 
-
-    <div>
-
-
-    </div>
-
-</form>
+        </div>
+    </form>
 
 
 </body>
