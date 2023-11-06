@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-</head>
-<body>
 
-</body>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Index</title>
+    </head>
+
+<!-- Afegim l'idioma i els caràcters utlitzts al codi i definim l'estil de la nostra pàgina amb un External CSS (document css extern). -->
+<!-- Per organitzar el nostre codi, fem servir diferents etiquetes (labels) com header, nav, main, section i footer,
+    que ens ajudaran a visualitar tot de manera més clara. -->
+
+    <body>
+        <header>
+            <h1> La meva pàgina web </h1>
+
+        </header>
+        <nav>
+            <!-- Apliquem enllaços -->
+            <a href="#">  Secció 1 </a>
+            <span> | </span>
+            <a href="#"> Secció 2 </a>
+            <span> | </span>
+            <a href="#"> Secció 3 </a>
+        </nav>
+        <main>
+            <!-- Apliquem id's únics a cada secció -->
+            <section id="seccio1">
+                <h2> Secció 1 </h2>
+                <p> Aquest és el contingut de la secció 1. </p>
+            </section>
+            <section id="seccio2">
+                <h2> Secció 2 </h2>
+                <p> Aquest és el contingut de la secció 2. </p>
+            </section>
+            <section id="seccio3">
+                <h2> Secció 3 </h2>
+                <p> Aquest és el contingut de la secció 3. </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- El '&copy;' l'utilitzem per introduir el símbol de copyright -->
+            <p> &copy; 2023 La meva pàgina web </p>
+        </footer>
+
+    </body>
+
 </html>

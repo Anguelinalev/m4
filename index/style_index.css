@@ -1,0 +1,63 @@
+
+/* El 'margin' el fem servir per crear marges i el padding per crear opacitat. Apliquem un margin i padding de zero píxels
+per poder introduir una capçalera sense marges. */
+body {
+margin: 0px;
+padding: 0px;
+}
+
+/* Amb 'position: fixed' al header (a la capçelera) fem que la posició de la mateixa sigui fixa en la pàgina,
+ és a dir, si fem scroll haurà de seguir en pantalla fixament en el lloc que li hem assignat.
+'Width' configura l'amplada i funciona amb la mesura de vw, 1 vw equival a 1 percentatge de la pàgina (es fa servir per
+que no es desplacin els elements quan el dispositiu sigui un altre, com per exemple, un mòbil). I 'height' té la mateixa funció,
+només que configura l'altura, i la seva mesura son vh tot i que en aquest cas s'ha configurat amb píxels.  */
+header{
+position: fixed;
+width: 100vw;
+text-align: center;
+background-color: #198586;
+margin-bottom: 30px;
+height: 150px;
+}
+
+/* L'atrubit 'sticky' en quant a la posició de l'etiqueta nav fa la funció de relative fins que fas scroll, que funciona com a fixed.  */
+nav{
+position: sticky;
+text-align: center;
+top: 100px;
+color: white;
+}
+
+a{
+color: #B8E0E0;
+}
+
+main{
+margin-top: 180px;
+margin-bottom: 50px;
+}
+
+h1 {
+margin-top: 30px;
+margin-bottom: 30px;
+color: white;
+}
+
+h2{
+font-family: georgia;
+color: #328A8B;
+}
+
+#seccio1 , #seccio2 , #seccio3 {
+background-color: #DDEEEE;
+margin: 20px 80px;
+padding: 20px;
+}
+
+footer{
+text-align: center;
+color: white;
+background-color: #198586;
+font-family: courier new;
+padding: 10px;
+}
